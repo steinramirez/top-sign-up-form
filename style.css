@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Gugi&display=swap');
+
+
+:root{
+ --bg-color:rgb(17, 21, 29);
+ --family-font:'Gugi', Tahoma, Geneva, Verdana, sans-serif;
+ --color-font:#1fb422;
+ --button-text-color: rgb(170, 166, 166);
+ --bg-input-color:rgb(0, 0, 0);
+}
+*{
+    box-sizing: border-box;
+    border-color: orange;
+   /* border: 1px solid orange; */
+}
+
+body{
+    margin:0;
+    background: var(--bg-color);
+    font-family: var(--family-font) ;
+    color:var(--color-font);
+}
+.main
+{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    width: 100vw;
+    margin:0;
+}
+.sideA{
+   
+    background: url("images/city.jpg");
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 100vh;
+    
+}
+.sideB{
+    align-items: left;
+    text-align: left;
+    gap:40px;
+    width: 700px;
+    padding:50px;
+}
+.form{
+    gap:10px;
+    flex-flow: wrap;
+    display: flex;
+    flex-direction: row;
+}
+input
+{
+    margin: 10px;
+    border: none;
+    display: flex;
+    flex-flow:column;
+    background: transparent;
+    border-bottom:1px solid var(--button-text-color);
+}
+input:focus{
+    outline: none;
+    border-bottom: 1px solid var(--color-font);
+}
+label{
+    color: var(--color-font);
+}
+button.btn{
+    border: none;
+    padding: 20px;
+    color: var(--bg-text-color);
+    border-radius: 10px;
+    background-color: #000;
+}
+button.btn:hover{
+    background-color: var(--bg-text-color);
+    color:white;
+    
+}
+button.btn:active
+{
+    background-color: var(--bg-input-color) ;
+    color: var(--color-font);
+}
+.pForm
+{
+   font-size:20px;
+}
+.footer
+{
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background: rgb(21, 21, 21);
+    color:var(--color-font);
+}
+
+a , link 
+{
+    color:white;
+    text-decoration: none;
+}
+.textFore{
+    margin:10px;
+}
+
+.login{
+    text-align:center;
+      font-size: 1rem;
+      color: #fff;
+      -webkit-text-stroke: 4px rgba(0,0,0,0);
+            text-stroke: 4px rgba(0,0,0,0);
+      font-weight: bold;
+    letter-spacing:3px;
+    background: -moz-linear-gradient(-45deg, #1df771 0%, #4efc2f 25%, #1c7228 50%, #a9cc1c 75%, #cfe8c3 100%) 0% center / 200% auto;
+    background: -webkit-linear-gradient(-45deg, #1df771 0%, #4efc2f 25%, #1c7228 50%, #a9cc1c 75%, #cfe8c3 100) 0% center / 200% auto;
+    background: linear-gradient(135deg,  #1df771 0%, #4efc2f 25%, #1c7228 50%, #a9cc1c 75%, #cfe8c3 100) 0% center / 200% auto;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-animation: outlineRun 4s linear infinite;
+              animation: outlineRun 4s linear infinite;
+  }
+  /* 背景の横位置をズラす */
+  @-webkit-keyframes outlineRun {
+    to { background-position-x: 200%; }
+  }
+  @keyframes outlineRun {
+    to { background-position-x: 200%; }
+  }
+
+  .box-logo 
+  {
+      position:relative;
+      justify-content:center;
+      align-items:center;
+      top:20vh;
+      color:black;
+      background-color: black;
+      padding:20px;
+      background-color: rgba(123, 123, 123, 0.215);
+
+    }
+    .logo{
+        align-items: center;
+        justify-content: center;
+        display:flex;
+    }
